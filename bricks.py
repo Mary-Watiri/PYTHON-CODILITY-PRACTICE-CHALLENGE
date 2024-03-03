@@ -4,7 +4,7 @@
 #If not possible return -1
 #Calculate the target number of bricks for each box
 #Initialize the counter of moves
-
+##END
 
 
 
@@ -17,7 +17,8 @@ def solution(A):
     
     # Check if the total number of bricks can be evenly distributed among boxes
     if total_bricks % len(A) != 0:
-        return -1  # If not possible, return -1
+        # If not possible, return -1
+        return -1  
     
     # Calculate the target number of bricks for each box
     target_bricks = total_bricks // len(A)
@@ -37,6 +38,5 @@ def solution(A):
 
 # Test cases
 A = [11, 10, 8, 12, 8, 10, 11]
-print(solution(A))  # Output: 7
-A = [7, 14, 10]
-print(solution(A))  # Output: -1
+print(solution(A))  
+print(solution(A))  
